@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./registro.css">
+    <title>Document</title>
+</head>
+
+<body>
+  <div class="container w-50 p-3 borde borde-advertencia redondeado p-3 mb-2 bg-light">
+     
+        <h3> Ingreso de Mercancia </h3>
+        <form action="" onsubmit=" return false; " id="form">
+            <label for=""> Mercancia </label> <br>
+            <input entrada="texto" id="Mercancia"> <br>
+            <label for=""> Valor </label> <br>
+            <input entrada="texto" id="valor"> <br>
+            <label for=""> Cantidad </label> <br>
+            <input entrada="texto" id="cantidad"> <br>
+            <br>
+            <button type="button" onclick ="ingresar()" class="button button-primary"> Ingresar </button>
+        </form>
+        <div id="mensaje" class="texto-peligro"> </div>
+         <p id="correcto" class="texto-exito"> </p>
+         <hora>
+            <button type="button" onclick="listar()" class="button button-success"> Listar Productos </button>
+            <br> <br>
+            <h3> Lista de Mercancia </h3>
+            <p id="lista"> </p>
+        </div>
+        
+
+    </div>
+  <div class="containerVentas">
+        <h3> Mercancia Vendida </h3>
+        <form action="" onsubmit="return false " id="formulario2"></form>
+         <script src="./main.js"></script>
+         <label for=""> Mercancia </label> <br>
+         <input entrada="texto" id="Mercancia2"> <br>
+         <label for=""> Cantidad </label> <br>
+         <input entrada="texto" id="cantidad2"> <br>
+        </form>
+        <div id="mensaje2" class="texto-novalido"> </div>
+         <p id="correcto2" class="texto-exitoso"> </p>
+         <hora></hora>
+         <button type="button" onclick="mostrar()" class="button button-successor"> mostrar lista vendida </button>
+          <br> <br>
+          <h3> Lista de Mercancia vendida </h3>
+          <p id="resultado2"> </p>
+
+    </div>
+    
+</body>
+
+</html>
